@@ -1,5 +1,5 @@
 application: prayandtell
-version: wp
+version: alpha
 runtime: php
 api_version: 1
 
