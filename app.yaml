@@ -1,0 +1,36 @@
+application: prayandtell
+version: wp
+runtime: php
+api_version: 1
+
+handlers:
+- url: /(.*\.(htm|html|css|js))$
+  static_files: \1
+  upload: .*\.(htm|html|css|js)$
+  application_readable: true
+
+- url: /wp-admin/(.+)
+  script: wp-admin/\1
+  
+- url: /wp-admin/
+  script: wp-admin/index.php
+
+- url: /wp-cron.php
+  script: wp-cron.php
+  login: admin
+
+- url: /wp-content/(.*\.(ico|jpg|png|gif))$
+  static_files: wp-content/\1
+  upload: wp-content/.*\.(ico|jpg|png|gif)$
+  application_readable: true
+  
+- url: /wp-includes/(.*\.(ico|jpg|png|gif))$
+  static_files: wp-includes/\1
+  upload: wp-inlcudes/.*\.(ico|jpg|png|gif)$
+  application_readable: true
+
+- url: /wp-(.+).php
+  script: wp-\1.php
+
+- url: /.*
+  script: timeline.php

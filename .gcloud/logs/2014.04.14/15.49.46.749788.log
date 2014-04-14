@@ -1,0 +1,12 @@
+2014-04-14 15:49:46,753 DEBUG    root            Metrics started...
+2014-04-14 15:49:46,757 DEBUG    root            Running gcloud.auth.git-helper with _Args({'api_host': None,
+ 'h': None,
+ 'method': 'get',
+ 'project': None,
+ 'quiet': None,
+ 'user_output_enabled': None,
+ 'verbosity': None}).
+2014-04-14 15:49:46,766 INFO     oauth2client.client Refreshing access_token
+2014-04-14 15:49:46,926 DEBUG    root            Sent event: Event(category='Executions', action='gcloud', label=u'2014.04.08', value=0)
+2014-04-14 15:49:47,024 DEBUG    root            Shutting down metrics...
+2014-04-14 15:49:47,138 DEBUG    root            Sent event: Event(category='Commands', action='gcloud.auth.git-helper', label='unknown', value=0)

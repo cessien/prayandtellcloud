@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "open sans";
+    color:#777;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Fixed header spacing */
+#sb-site > div:nth-child(2) {
+    margin-top: 150px;
+}
+
+#logo {
+    padding: 12px 0;
+    position: relative;
+    left: 5px;
+}
+
+#logo > * {
+    height: 1em;
+    font-weight:700;
+    padding: 0px 4px;
+    color: #b732e8;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: 2px solid #b732e8;
+    background-color: #fff;
+    margin: 0px 1px;
+}
+
+#logo > * > span {
+    color: #b732e8;
+}
+
+#logo > span.logo-box, #logo > span.logo-box > span {
+    background-color: #b732e8;
+    color: #fff;
+    border-color: #b732e8;
+}
+
+a:link {
+    text-decoration:none;
+    color: #428bca;
+    cursor: pointer;
+}
+a:visited {
+    text-decoration:none;
+    color: #428bca;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration:none;
+    color: #428bca;
+    cursor: pointer;
+}
+a:active {
+    text-decoration:none;
+    color: #428bca;
+    cursor: pointer;
+}
+
+#sb-site {
+    /*background-image:url('http://www.montrealgazette.com/cms/binary/2480222.jpg');*/
+    /*background-color: #b732e8;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.landing-intro .text-center h1 {
+    font-size: 72pt;
+}
+
+.header {
+    width: 100%;
+    margin-right:0;
+    padding-left: 15px;
+}
+
+.header-left {
+    float: left;
+    display: inline-block;
+}
+
+.header-right {
+    float: right;
+    display: inline-block;
+    margin-right: 0;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+}
+
+.header-context1 {
+    vertical-align: bottom;
+    display: inline-block;
+    position: absolute;
+    left: 145px;
+    right: 70px;
+    line-height: 5px;
+    padding: 20px 15px 0;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header-context2 {
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    left: 145px;
+    right: 70px;
+    top: 50px;
+    line-height: 0px;
+    padding: 0 15px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #eee;
+    background-color: #fff;
+    z-index: 100;
+    font-size: 55px;
+}
+
+.header-context2 i {
+    color: #aaa;
+}
+
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.login-form .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+	
+.login-form .omb_socialButtons a {
+	color: white;
+	opacity:0.9;
+}
+.login-form .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;    	
+}
+.login-form .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.login-form .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.login-form .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+.login-form .omb_socialButtons .omb_btn-google .fa .fa-facebook {
+    background-image:url('/img/fb-sm.png');
+}
+
+.login-form .login-formOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.login-form .login-formOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.login-form .login-formOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}			
+
+.login-form .login-formForm .input-group.i {
+	width: 2em;
+}
+.login-form .login-formForm  .help-block {
+    color: red;
+}
+
+	
+@media (min-width: 768px) {
+    .login-form .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}
+}
+
+.feed {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+    height: 900px;
+    padding-top: 120px;
+}
+
+.feed:before {
+    position: absolute;
+    content: " ";
+    top: 0px;
+    bottom: 0;
+    width: 3px;
+    left: 50%;
+    background-color: #eee;
+}
+ 
+.feed > li {
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    position: relative;
+    width: 40%;
+    float: left;
+    clear: left;
+    padding: 10px 20px 20px;
+    margin-right: 0px;
+    margin-left: 10px;
+    box-shadow: 0 0 5px #aaa;
+    border: 1px solid #eaeaea;
+}
+
+.feed > li.right{
+    float: right;
+    clear: right;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.feed > li: before {
+    display: table;
+    content: " ";
+}
+
+.feed > li: after {
+    clear: both;
+}
+
+.feed > li > .marker {
+    height: 24px;
+    width: 120px;
+    text-align: right;
+    position: absolute;
+    top: 16px;
+    right: -120px;
+    border-bottom: 2px solid #ddd;
+}
+
+.feed > li.right > .marker {
+    top: 16px;
+    left: -120px;
+    text-align: left;
+}
+
+.profile {
+    position: relative;
+    left: -10px;
+    top: 5px;
+}
+
+.profile > .circle {
+    border-radius: 50%;
+    width:8em;
+}
+
+.profile > * {
+    display: inline-block;
+    line-height: 0;
+}
+
+.profile > section {
+    margin-left: 5%;
+    width: auto;
+    vertical-align: middle;
+}
+
+.feed-body {
+    padding: 10px;
+}
+
+.navigation {
+    width: 33%;
+}
+
+.hidden3 {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .hidden3 {
+        display: none;
+    }
+    .navigation {
+        width: 75%;
+    }
+    
+    #logo {
+        padding: 12px 0;
+        position: relative;
+        left: -10px;
+    }
+    
+    .header-context1 {
+        vertical-align: bottom;
+        display: inline-block;
+        line-height: 23px;
+        padding: 10px 0 0;
+        font-weight: 700;
+        margin: 0;
+        font-size: 150%;
+    }
+    
+    .header-context2 {
+        left: 0px;
+        right: 0px;
+    }
+    
+    .feed > li {
+        margin: 10px;
+        position: relative;
+        float: none;
+        width: auto;
+        padding: 10px 20px 20px;
+        /*box-shadow: 0 0 10px #ddd;*/
+        border: 1px solid #ddd;
+        margin-bottom: 2em;
+    }
+    
+    .feed > li.right{
+        float: left;
+        clear: left;
+        position: relative;
+        float: none;
+        padding: 10px 20px 20px;
+        margin: 10px;
+        margin-bottom: 2em;
+    }
+    
+    .feed > li > .marker {
+        height: 24px;
+        width: 120px;
+        text-align: left;
+        position: static;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .feed > li.right > .marker {
+        height: 24px;
+        width: 120px;
+        text-align: left;
+        position: static;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .profile > .circle {
+        border-radius: 50%;
+        width:7em;
+    }
+    
+    .profile > section {
+        width: auto;
+    }
+}
